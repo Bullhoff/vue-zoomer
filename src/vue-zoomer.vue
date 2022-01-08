@@ -206,6 +206,7 @@ export default {
         }
       } else {
         let imageToContainerRatio = this.containerHeight * this.aspectRatio / this.containerWidth
+	imageToContainerRatio = imageToContainerRatio * 2;
         let translateLimitX = (this.scale * imageToContainerRatio - 1) / 2
         if (translateLimitX < 0) translateLimitX = 0
         return {
